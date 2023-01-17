@@ -12,8 +12,11 @@ Client: Vue.js, HTML, CSS, Bootstrap
 
 
 3. 제품검색/리스트 페이지 html 만들어 보기
+  . https://www.youtube.com/watch?v=9nDLGbtcn-A&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=3
+  . Bootstrap에서 component 가져와서 화면 구성
 
 4. 제품 상세 페이지 html 만들어 보기
+  . https://www.youtube.com/watch?v=QcNiaDrp2kQ&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=4
 
 5. 제품 등록 페이지 html 만들어 보기
 
