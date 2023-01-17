@@ -1,0 +1,38 @@
+<제품 판매 웹앱 구현>
+사용 플랫폼
+Server: node.js, express, MariaDB
+Client: Vue.js, HTML, CSS, Bootstrap
+
+참고 사이트
+1. 제품판매웹앱(5분 소개) - 전체 구현이 아닌 제품등록과 제품검색, 제품상세 페이지까지만
+  . https://www.youtube.com/watch?v=J2lLkpc79n0&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp
+
+2. 부스스트랩 기본 익히기(1시간) - 사이트 소개
+  . https://www.youtube.com/watch?v=LjDouK_dI3o&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=2
+
+
+3. 제품검색/리스트 페이지 html 만들어 보기
+
+4. 제품 상세 페이지 html 만들어 보기
+
+5. 제품 등록 페이지 html 만들어 보기
+
+6. MariaDB 설치하기
+
+8. SQL 목록 및 구현하기
+
+9. Node.js + Express 웹서버 만들기
+
+10. DB 연동하기
+
+11. Vue CLI 이용해서 client 만들기
+
+12. 부트스트랩 테마 Vue로 구성하기
+
+13. 제품 검색/리스트 컴포넌트 구현하기
+
+14. 제품 상세 컴포넌트 구현하기
+
+15. 제품 생성 컴포넌트 구현하기
+
+16. 최종 리뷰
