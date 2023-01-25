@@ -3,17 +3,30 @@ const app = express();
 const session = require('express-session');
 const fs = require('fs');
 
+const cors = require('cors');
+
+let corsOption = {
+  origin: 'http://localhost:8080', // 허락하는 요청 주소
+  credentials: true // true로 하면 설정한 내용을 response 헤더에 추가 해줍니다.
+}
+
+app.use(cors(corsOption)); // CORS 미들웨어 추가
+
 app.use(session({
   secret:'secret code',
   resave:false,
   saveUninitialized:false,
-  cookie:{
-    secure:true,
-    maxAge:1000*60*60 // 쿠키 유효시간
+  cookie: {
+    secure:false,
+    maxAge:1000 * 60 * 60 // 쿠키 유효시간
   }
 }));
 
-const server =app.listen(3000, ()=>{
+app.use(express.json({
+  limit: '50mb'
+}));
+
+const server =app.listen(3000, () => {
   console.log('Server started, port=3000');
 });
 
@@ -38,7 +51,7 @@ const db = {
 const dbPool = require('mysql').createPool(db);
 
 
-app.post('/api/login', async(request, res)=>{
+app.post('/api/login', async (request, res) => {
   // request.session['email'] = 'seungwon.go@gmail.com';
   // res.send('ok');
   try {
@@ -58,7 +71,7 @@ app.post('/api/login', async(request, res)=>{
   }
 });
 
-app.post('/api/logout', async(request, res)=>{
+app.post('/api/logout', async(request, res) => {
   request.session.destroy();
   res.send('ok');
 
